@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Культурные образцы дизайна</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> 
+    <link rel="shortcut icon" href = "./new_img/favicon.ico">
+    <link rel="stylesheet" href="./new.css">
+</head>
+<header>
+    <div class="header_title">Культурные образцы дизайна</div>
+    <div class="header_image"><img src="./new_img/log.png"></div>
+</header>
+<body>
+    <div class="nav">
+
+            <div class="dropdown">
+                <div class="nav_item drop">Авторизация</div>
+                <div class="dropdown-content">
+                <a id = "vhod" href="#modul-vhod">Вход</a><br/>
+                <a id = "reg" href="#modul-reg">Регистрация</a>
+                </div>
+            </div>
+
+        <div class="nav_item" ><a href="./new_work.html">Работы студентов</a></div>
+        <div class="nav_item"><a href = "./new_cab.html">Личный кабинет</a></div>
+    </div>
+
+
+
+
+    <a href="#" id="modul-vhod">
+        <div class = "okno">
+          <span id = "close">&times;</span>
+          <div class = "modul-name">Форма для входа на сайт</div><br /><br /><br />
+          <div class = "modul-content">
+            <form id = "auth_form" action="./auth.php" method= post>
+            Логин: <input required type = "text" name = "login" /><br />
+            <br />
+            Пароль:<input required type = "password" name = "password" /><br /><br />
+            <input type = "submit" class = "midul-sub" name = "submit" value="Войти">
+            </form>
+            </div>
+          </div>
+        </div>
+    </a>
+
+
+
+      <a href="#" id="modul-reg">
+        <div class="okno">
+          <span id="close2">&times;</span>
+          <div class = "modul-name">Форма для регистрации</div><br /><br />
+          <div class = "modul-content">
+            <form id = "reg_form" method = post>
+            Логин: <input id= "uname" required type = "text" name = "txtField" /><br />
+            Пароль:<input id="upass" required type = "password" name = "psw" /><br />
+            <p><input required type = "radio" name = "MyRadio1" value = "First">Студент</p>
+            <p><input required type = "radio" name = "MyRadio2" value = "Second">Преподаватель</p>
+            <div><input type = "submit" class = "midul-sub" name = "submit" value="Зарегестрироваться">
+            </form>
+            </div>
+          </div>
+        </div>
+      </a>
+
+
+
+    <section class = "section">
+        <div class="container">
+            <div class="section_header">
+                <h3 class = "section_suptitle">Что мы делаем</h3>
+                <h2 class = "section_title">О сайте</h2>
+                <div class = "section_text"><p>Данный сайт создан для студентов ПГНИУ с целью создания
+                    виртуальной выставки работ студентов по теме
+                    "Культурные образцы дизайна" и дальнейшей
+                    оценки работ преподавателем. На даном сайте
+                    можно будет ознакомиться с информационной справкой
+                    по , а также посмотреть работы студентов
+                    по данным темам и направлениям.
+                </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_item">
+                    <div class="card_inner">
+                    <div class="card_image"><img src="./new_img/card1.jpg" alt=""></div>
+                    <div class = "card_text"><a href="https://vk.com/fsf_psu" target="_blank">Социальные сети</a></div>
+                    </div>
+                </div>
+                
+                <div class="card_item">
+                    <div class="card_inner">
+                    <div class="card_image"><img src="./new_img/card2.jpg" alt=""></div>
+                    <div class = "card_text"><a href="http://www.psu.ru/" target="_blank">Сайт университета</a></div>
+                </div>
+                </div>
+               
+                <div class="card_item">
+                    <div class="card_inner">
+                    <div class="card_image"><img src="./new_img/card3.jpg" alt=""></div>
+                    <div class = "card_text"><a href="http://www.philsoc.psu.ru/" target="_blank">Сайт факультета</a></div>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class = "section section_l">
+        <div class="container">
+            <div class="section_header">
+                <h3 class = "section_suptitle">Альбом</h3>
+                <h2 class = "section_title">Работы студентов</h2>
+                <div class = "section_text"><p>Ознакомиться с работами студентов</p></div>
+                <a class = "btn" href="./new_work.html">Перейти</a>
+            </div>
+        </div>
+    </section>
+
+    <a href="reg.html">htubcnhfwbz</a>
+
+</body>
+<footer>
+    <div class="footer_text">Обратная связь: tatynakudrin@gmail.com
+    </div>
+</footer>
+<script charset="utf-8" src = "./new.js"></script>
+</html>

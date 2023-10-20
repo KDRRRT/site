@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="shortcut icon" href = "./new_img/favicon.ico">
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="./new.css">
+</head>
+<header class = "nav-cont">
+    <nav class="navbar navbar-user">
+        <div class="container">
+          <a class="navbar-brand" >Личный кабинет</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./new_one.html">На главную</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./new_work.html">Работы студентов</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<body>
+    <section class = "section">
+        <div class="container">
+            <div class="section_header">
+                <h3 class = "section_suptitle">Личный кабинет</h3>
+                <h2 class = "section_title">Информация о пользователе</h2>
+                <div class = "section_text"><p>     
+                    Логин: <div class=""></div>
+                    Пароль: <div class=""></div> <br/>
+                    <div class = "load"><h4><a href = "./index.html">Загрузить работу:</a></h4> <br/>
+
+
+
+                        Требования к фотографии: <br/>
+                        <ul><li>Формат : png</li> <li>Размер: 726/726 пикселей</li></ul> <br/>
+                        <form action = "./addFile.php" method="post" enctype="multipart/form-data">
+                            <input type = "file" name = "file">
+                            <input type="submit" value="Загрузить">
+                        </form>
+                        </div>
+                </p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class = "section">
+            <div class="container">
+                <div class="section_header">
+                    <h3 class = "section_suptitle">Портфолио</h3>
+                    <h2 class = "section_title">Мои работы</h2>
+                    <div class = "section_text">     
+                    <div class="works"></div> 
+                    <div class="mark"></div>   
+                    
+                    </div>
+                </div>
+            </div>
+            </section>
+    
+</body>
+<footer>
+    <div class="footer-text">
+        Обратная связь: tatynakudrin@gmail.com
+    </div>
+</footer>
+<script src = "./js/bootstrap.js"></script>
+</html>

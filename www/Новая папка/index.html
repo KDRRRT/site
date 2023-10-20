@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <form id = "some_form" action="auth.php" method = "POST">
+            <input id = "uname" name="login" placeholder="name" type="text">
+            <input id = "upass" name="password" placeholder="pass" type="text">
+            <input type="submit">
+            </form>
+            <span id="answer"></span>
+<script>some_form.onsubmit= function(e) { e.preventDefault(); 
+                        console.log('submit');
+                        
+                        $.ajax({
+                            url: "reg.php",
+                            method: "POST",
+                            data:{login: uname.value, password: upass.value}
+                            }).done(function( otvet ){
+                            console.log(otvet);
+                            answer.innerHTML=otvet;
+                            });
+}
+</script>
+
+
+</body>
+</html>
